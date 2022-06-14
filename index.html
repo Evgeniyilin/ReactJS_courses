@@ -10,7 +10,15 @@
     <body>
         <div id="example"></div>
         <script type="text/babel">
-            ReactDOM.render (<div><h3>Hi, it is me!</h3></div>, document.getElementById("example"));
+            var Block = createReactClass ({
+                render: function () {
+                    return (<div><h3>Hi, it is me!</h3></div>)
+                }
+            });            
+            ReactDOM.render (
+                <Block />,
+                document.getElementById("example")
+            );
         </script>
     </body>
-</html>
+</html> 
